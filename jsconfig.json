@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "~/*": ["./src/*"],
+            "Page/*": ["./src/page/*"],
+            "Router/*": ["./src/router/*"],
+            "Common/*": ["./src/common/*"],
+            "Component/*": ["./src/component/*"],
+        },
+        "experimentalDecorators": true,
+    },
+    "allowJs": true
+}

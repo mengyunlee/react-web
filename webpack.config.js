@@ -28,9 +28,23 @@ module.exports = {
             use: {
                 loader: 'babel-loader',
                 options: {
-                    presets: ['@babel/preset-react']
+                    presets: [
+                        '@babel/preset-react',
+                    ],
+                    plugins: [
+                        '@babel/plugin-proposal-class-properties'
+                    ]
                 }
             }
         }]
+    },
+    resolve: {
+        alias: {
+            '~': path.resolve(__dirname),
+            'Page': path.resolve(__dirname, './src/page'),
+            'Router': path.resolve(__dirname, './src/router'),
+            'Common': path.resolve(__dirname, './src/common'),
+            'Component': path.resolve(__dirname, './src/component'),
+        }
     }
 };
